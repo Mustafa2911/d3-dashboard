@@ -7,11 +7,16 @@
     <style>
       svg {
         border: 1px solid #ddd;
+        border-radius: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      div{
+        position: inherit;
       }
     </style>
   </head>
   <body>
-    <div id="chart" style="width: 600px"></div>
+    <div id="chart" style="width: 680px height: 480px"></div>
     <script>
       // data and labels to plot
       const data = [22.9, 27.9, 27.6, 27.7, 44.7, 47, 51.5,125.7];
@@ -25,7 +30,7 @@
       const svg_height = 500;
       
       // bg color of bars
-      const bar_color = "#FFCB65";
+      const bar_color = "#72b3b3";
       
       // top and bottom margins
       const top_offset = 50;

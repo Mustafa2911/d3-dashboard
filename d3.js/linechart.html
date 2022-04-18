@@ -1,11 +1,24 @@
 <!DOCTYPE html>
+<head>
+  <style>
+    body{
+      /* border-style: ridge; */
+      border-radius: 40px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    h1{
+      color: black;
+    }
+  </style>
+</head>
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Initialize a select button -->
-<h1>Trends of budget Allocaion Year wise</h1>
+<center>
+<h1>Trends of budget Allocaion Year wise</h1></center>
 <select id="selectButton" style="margin-left: 62px;"></select>
 
 <!-- Create a div where the graph will take place -->
@@ -16,9 +29,9 @@
 <script>
 
   // set the dimensions and margins of the graph
-  var margin = {top: 10, right: 20, bottom: 30, left: 150},
-      width = 460 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+  var margin = {top: 1, right: 40, bottom: 20, left: 150},
+      width = 410  - margin.right,
+      height = 300 - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
   var svg = d3.select("#my_dataviz")

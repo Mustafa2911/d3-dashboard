@@ -10,43 +10,43 @@
     <style type="text/css">
     body {
         font-family: Open Sans, sans-serif;
-        background-color: #edffff;
-       margin-left:10px;
-        margin-top: 35px;
+        background-color: #e5f1f98a;
+       
+        
     }
 
     #vis {
-        width: 500px;
+        /* width: 840px; */
         clear: both;
-        height: 400px;
-
+        
+        margin: 0px auto;
     }
+
 /* IMP  */
     svg {
+        margin-right: 300px;
         border-radius: 40px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        width: 64rem;
-        height: 480px;
-        margin-top: 15px;
+        box-shadow:1px 5px 3px 4px   black;
+        width: 68rem;
+        height: 300px;
     }
 
     #vis-svg-container {
         position: absolute;
         top: 0;
-        margin-bottom: 5rem;
     }
 
     .tooltip {
         position: absolute;
-        top: 30px;
+        top: 100px;
         left: 100px;
         -moz-border-radius: 5px;
         border-radius: 5px;
         border: 1px solid grey;
-        background: #f3f3f3;
+        /* background: #222222; */
         background:;
         opacity: 1;
-        color: #eeeeee;
+        /* color: #eeeeee; */
         color: black;
         padding: 10px;
         text-align: center;
@@ -105,7 +105,7 @@
     .overlay-1 {
 
         margin-left: 630px;
-        /* margin-top: 400px; */
+        margin-top: 400px;
     }
 
 
@@ -125,15 +125,15 @@
     }
 
     .text-content.overlay-3 {
-        /* margin-top: 350px; */
+        margin-top: 350px;
         margin-left: 600px;
     }
 
     .text-overlay-grp {
-        /* position: absolute; */
+        position: absolute;
         width: 300px;
         margin-left: 30px;
-        /* margin-top: 60px; */
+        margin-top: 60px;
     }
 
     .text-overlay-grp .text-content-title {
@@ -149,7 +149,7 @@
 
     #obi-colorKey {
         text-align: center;
-        /* top: 210px; */
+        top: 210px;
         left: 10px;
         padding: 20px;
         margin: 0;
@@ -259,10 +259,10 @@
         border: 1px solid rgba(0, 0, 0, 0.12);
     }
 
-    #view_selection a.active {
+    /* #view_selection a.active {
         font-weight: 700;
         background: rgba(128, 128, 128, 0.15);
-    }
+    } */
 
 
     a:link {
@@ -298,11 +298,9 @@
 </head>
 
 <body>
-    <h1 style="margin-left:34px;"><b>Expenditure Budget of Ministries</b></h1>
-      <h1><span style="margin-left:150px;"><b>and Departments</span> </b></h1>
-
+    <h1><b>Expenditure Budget of Ministries and Departments</b></h1>
     <div>
-                    <div style="margin-top: 34px;" id="vis">
+                    <div id="vis">
                         <div id="vis-svg-container"></div>
                     </div>      
     </div>
@@ -315,7 +313,7 @@
         "use strict";
 
         var width = 500,
-            height = 600,
+            height = 530,
             tooltip = CustomTooltip("obi_tooltip", 240),
             layout_gravity = -0.01,
             selected_year = "Budget Estimates 2022-2023",
@@ -329,8 +327,8 @@
         var center = { x: width * 6 / 10, y: height * 5 / 10 },
             year_centers = {
                 "Core of the Core Schemes": {
-                    x: width * 5 / 10,
-                    y: height * 0 / 10
+                    x: width * 5.5 / 10,
+                    y: height * 4 / 10
                 },
                 "Core Schemes": {
                     x: width * 4.5 / 10,

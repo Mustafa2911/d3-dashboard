@@ -5,18 +5,40 @@
     <title>Hello, world!</title>
     <style>
       .card{
-        background-color: rgba(33, 173, 145, 0.473);
+        background-color: #007c7c;
         display: inline-block;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
       }
       .navbar-brand{
-        font-size: 2rem;
+        font-size: 3rem;
+        
       }
-     
+      .navbar{
+        background-color: #017e7e;
+        padding: 10px;
+        border-radius: 4px ;
+      }
+      .div{
+        border-color: black;
+      }
+     footer{
+       padding: 30px;
+       border-radius: 10px;
+       background-color: #017e7e;
+       color: white;
+       text-align: center;
+     }
+     body{
+       margin-left: 10px;
+     }
     </style>
+    
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-      <a class="navbar-brand" href="#">Budget 2022 Analysis <img src="logo.png" alt=""></a>
+  <body style="background-color: #edffff;">
+    <nav class="navbar justify-content-center">
+      <a class="navbar-brand" href="#"style="color:white">Budget 2022 Analysis <img src="logo.png" alt=""></a>
      
     </nav>
     <div class="card" style="width: 342px;margin-left: 17px;margin-top: 24px;">
@@ -44,23 +66,34 @@
         <h5 class="card-title" style="font-size: 1.8rem;text-align: center;">₹16,60,000cr</h5>
       </div>
     </div>
+    <div style="padding-top:2%;">
+    <div style="display: inline;">
+      <iframe src="bubble.html" frameborder="0" style="width: 45%;height: 530px;"></iframe>
+    </div>
+      <div style="display: inline; margin-left: 90px;">
+        <iframe src="bar_responsive.html" style="width: 46%;height: 550px;" frameborder="0"></iframe>
+      </div> 
+    </div> 
+    <div style="margin-bottom: 15px;">
    <div style="display: inline;">
     <h1></h1>
-       <iframe src="bar.html" frameborder="0" style="width: 45%;height: 559px;"></iframe>
+       <iframe src="bar.html" frameborder="0" style="width: 43%;height: 500px;"></iframe>
    </div>
-   <div style="display: inline;">
-    <iframe src="linechart.html" style="width: 45%;height: 516px;" frameborder="0"></iframe>
+   <div style="display: inline; margin-left: 175px;">
+    <iframe src="linechart.html" style="width: 42%;height: 490px;" frameborder="0"></iframe>
   </div>
-  <div style="display: inline;">
-    <iframe src="bubble.html" frameborder="0" style="width: 45%;height: 516px;"></iframe>
-  </div>
-  <div style="display: inline;">
-    <iframe src="pie.html" frameborder="0" style="width: 54%;height: 554px;"></iframe>
 </div>
   <div style="display: inline;">
-    <iframe src="bar_responsive.html" style="width: 45%;height: 516px;" frameborder="0"></iframe>
+    <iframe src="donut2.html" frameborder="0" style="width: 45%;height: 600px;"></iframe>
   </div>
+  <div style="display: inline; margin-left: 120px;">
+    <iframe src="pie.html" frameborder="0" style="width: 44%;height: 590px;"></iframe>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+  <footer>
+    All rights Reserved
+  </footer>
+</body>
 </html>
